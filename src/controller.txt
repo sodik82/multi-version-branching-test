@@ -5,6 +5,10 @@ class MyController {
         helloService.hello();
     }
 
+    POST("/world") {
+        worldService.create();
+    }
+
     PUT("/cheese") {
         cheeseService.put();
     }
