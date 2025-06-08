@@ -4,4 +4,8 @@ class MyController {
     GET("/hello") {
         helloService.hello();
     }
+
+    PUT("/cheese") {
+        cheeseService.put();
+    }
 }
