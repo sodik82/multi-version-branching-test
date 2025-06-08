@@ -9,6 +9,10 @@ class MyController {
         worldService.create();
     }
 
+    PUT("/cheese") {
+        cheeseService.put();
+    }
+    
     DELETE("/war") {
         peaceService.endWar();
     }
