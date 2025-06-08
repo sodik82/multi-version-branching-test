@@ -12,4 +12,8 @@ class MyController {
     PUT("/cheese") {
         cheeseService.put();
     }
+    
+    DELETE("/war") {
+        peaceService.endWar();
+    }
 }
