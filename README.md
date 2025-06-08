@@ -1,3 +1,3 @@
-# Multi version brancching explained
+# Multi version branching explained
 
 

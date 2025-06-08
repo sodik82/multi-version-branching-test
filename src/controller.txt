@@ -4,4 +4,8 @@ class MyController {
     GET("/hello") {
         helloService.hello();
     }
+
+    POST("/world") {
+        worldService.create();
+    }
 }
