@@ -32,3 +32,17 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 After resolve we see there are actually no real changes but git doesn't resolve them automatically.
 This time we wan't do squash - just merge
+
+11. Hotfix 2 was done on release 1
+12. We start another up-merge branch - there are conflicts - but git can resolve them automatically now
+
+```bash
+sodik@actopus:~/projects/PLAYGROUND/multi-version-branching-test (chore/release1-to-release2-2nd)$ git merge release/2
+Merge made by the 'ort' strategy.
+ README.md             | 17 +++++++++++++++++
+ src/controller.txt    |  4 ++++
+ src/peace-service.txt |  7 +++++++
+ src/world-service.txt |  2 +-
+ 4 files changed, 29 insertions(+), 1 deletion(-)
+ create mode 100644 src/peace-service.txt
+```
