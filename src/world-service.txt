@@ -2,6 +2,6 @@
 class WorldService {
 
     void create() {
-        log.info("Creating new world!!!");
+        log.info("Creating new world!!! And saving to DB");
     }
 }
