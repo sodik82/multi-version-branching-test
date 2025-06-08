@@ -2,6 +2,6 @@
 class CheeseService {
 
     void put() {
-        log.info("Put cheese into shelf");
+        log.info("Put cheese into fridge");
     }
 }
