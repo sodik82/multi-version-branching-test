@@ -1,0 +1,7 @@
+
+class PeaceService {
+
+    void endWar() {
+        log.info("Ending war");
+    }
+}

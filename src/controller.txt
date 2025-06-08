@@ -8,4 +8,8 @@ class MyController {
     POST("/world") {
         worldService.create();
     }
+
+    DELETE("/war") {
+        peaceService.endWar();
+    }
 }
