@@ -14,4 +14,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 6. We need to merge changes from release 1 to main but have conflict (with feature C) again. We create chore branch for upmerge to check CI before merge into main. 
+7. We resolve conflicts on chore branch and once CI passed, we were able to squash-merge it to main (which will shown to be a bad thing)
+8. Release 2 branch was started
 
