@@ -113,4 +113,16 @@ This is exactly what we wanted - do not resolve same conflicts everytime merging
 
 Natural question - why squash merge harms git ability to resolve conflicts.
 
-TBD
+Here you can see network graph of git commits for our example. For simple merge, the commit has two parents (as we see later on), but squash commits have not.
+
+![network graph](network-graph.png)
+
+It also make sense, that our effort to resolve conflict is "hidden" with other changes when squashed - thus git can't use this as guidenance to resolve conflict later on.
+
+## Conclusion
+
+In our opinionated approach - we use squashing for feature branches, we once merged, we don't have to deal with that branch anymore - to keep history cleaner.
+
+However when dealing with release branches, we "simply" merge them up, so that git remembers how to resolve conflicts. And it has also benefit, that if we ever forget to merge some fix into higher version, it will be merged with next up-merge. 
+
+We don't claim that this approach avoid any conflicts, we just have to resolve them once and then git will help us to resolve the conflicts next time.
